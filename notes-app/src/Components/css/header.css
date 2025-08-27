@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  background: rgba(75, 59, 192, 0.4); /* semi-transparent glass effect */
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 400;
+}

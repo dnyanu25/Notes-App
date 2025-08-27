@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  border: 0cap;
+  
+    background: linear-gradient(to right, #8497de, #539af6, #496df1, #3489f7,#8497de, #5d9cee, #496df1, #247ef3);
+    /* background:  linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.3)); */
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 100vh;
+ /* make sure this path is correct */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.notes
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}

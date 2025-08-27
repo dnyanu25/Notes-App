@@ -1,0 +1,162 @@
+
+/* 🖱️ Press-down animation */
+.note:active {
+  transform: scale(0.97) translateY(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3),
+              0 0 6px rgba(255, 100, 100, 0.5);
+  border-color: rgba(255, 100, 100, 0.7);
+}
+
+
+.note_footer {
+  display: flex;
+  justify-content: space-between; /* pushes "100 left" left, Save right */
+  align-items: center;            /* vertical alignment */
+  margin-bottom: 5px;
+}
+
+.note textarea{
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    color: #fff;
+    resize: none;
+    font-size: 18px;
+}
+.note textarea:focus{
+    outline: none;
+}
+.note textarea::placeholder{
+    color: #fff;
+}
+.note_save{
+    background:transparent;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    padding: 4px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.note_save:hover{
+    background: #fff;
+    color: #4b1589;
+    border: 1.5px solid #fff;
+}
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+.note {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.1),
+              0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 15px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 🔥 Hover effect */
+.note:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+              0 0 12px rgba(72, 145, 255, 0.6);
+  border-color: rgba(72, 145, 255, 0.7);
+}
+
+.note_footer {
+  display: flex;
+  justify-content: space-between; /* pushes items to far ends */
+  align-items: center;            /* vertical alignment */
+  margin-bottom: 15px;
+}
+
+.note_footer span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.note_footer button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.note_footer button:hover {
+  background: #0056b3;
+}
+
+.note_saveSave {
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.1s ease-in-out;
+
+  /* 👇 positioning */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.note_saveSave:hover {
+  background: #fff;
+  color: #4b1589;
+  border: 1.5px solid #fff;
+}
+.note_saveSave:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+/* // for create note */
+.note-title {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 1px;
+  color: #333;
+  word-wrap: break-word;
+}
+.note-title-input
+{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 3px;
+  color: #080b15;
+  word-wrap: break-word;
+  background-color: #66acf7;
+  padding: 2px;
+}
+
