@@ -4,7 +4,7 @@ body {
   border: 0cap;
   
     background: linear-gradient(to right, #8497de, #539af6, #496df1, #3489f7,#8497de, #5d9cee, #496df1, #247ef3);
-    /* background:  linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.3)); */.
+    /* background:  linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.3)); */
 }
 
 .main {
