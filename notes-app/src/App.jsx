@@ -29,7 +29,7 @@ useEffect(() => {
         {/* Header stays on all pages */}
         <Header />
 
-        {/* Content area changes based on route */}
+        {/* Content area changes based  route */}
         <div className="content">
           <Routes>
             {/* Default route */}
