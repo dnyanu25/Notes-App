@@ -11,7 +11,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [title, setTitle] = useState(" default");
 useEffect(() => {
-    // 1. Correct the port to 8080 and the endpoint to /home
+    // 1. Correct the port to 8080 and the  endpoint to /home
     fetch("http://localhost:8080/home")
       .then(res => {
         if (!res.ok) {
