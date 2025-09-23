@@ -5,7 +5,7 @@ import Header from './Components/Header.jsx';
 import Notes from './Components/notes.jsx';
 import Login from './Components/Login.jsx';
 import Register from './Components/Register.jsx';
-import Reset from './Components/Reset.jsx';
+import Reset from './Components/Reset.jsx'; 
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
